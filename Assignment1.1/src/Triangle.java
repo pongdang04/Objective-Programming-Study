@@ -17,8 +17,7 @@ public class Triangle {
 				}
 			}
 			System.out.println("홀수를 입력해주세요.");
-		}
-		
+		}	
 		
 		floor = iInput/2+1;
 		
@@ -40,6 +39,5 @@ public class Triangle {
 		}
 		
 		oInDev.close();
-		
 	}
 }
