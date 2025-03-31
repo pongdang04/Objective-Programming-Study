@@ -23,8 +23,22 @@ public class Ex2_0331_rotation {
         }
 
         rotateNum=rotateNum%length;
+        if(direction == 0){
+            rotateNum = -1*rotateNum;
+        }
 
-        if(direction == 1){
+        for(int i=0;i<length;i++){
+            tmpIdx = i+rotateNum;
+
+            if(tmpIdx>(length-1)) {//when Idx left the boundary of the length
+                tmpIdx = tmpIdx % length;
+            }else if(tmpIdx<0){//when Idx is smaller than min
+                tmpIdx = tmpIdx+length;
+            }
+
+            resultArr[tmpIdx]=inputArr[i];
+        }
+  /*      if(direction == 1){
         for(int i=0;i<length;i++){
             tmpIdx = i+rotateNum;
 
@@ -42,7 +56,7 @@ public class Ex2_0331_rotation {
                 resultArr[tmpIdx]=inputArr[i];
             }
         }
-
+*/
         System.out.print("");
         for(int i=0;i<length;i++){
             System.out.print(resultArr[i] + " ");
