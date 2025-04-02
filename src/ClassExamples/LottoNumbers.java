@@ -1,3 +1,4 @@
+package ClassExamples;
 
 public class LottoNumbers {
     public static void main(String[] args) {

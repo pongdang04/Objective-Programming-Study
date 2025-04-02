@@ -1,3 +1,5 @@
+package ClassExamples;
+
 import java.util.Scanner;
 
 public class DuplicateNumbers {
