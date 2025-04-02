@@ -1,3 +1,5 @@
+package Examples;
+
 import java.util.Scanner;
 
 public class Ex2_0331_rotation {

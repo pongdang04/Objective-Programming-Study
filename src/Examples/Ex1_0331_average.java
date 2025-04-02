@@ -1,3 +1,5 @@
+package Examples;
+
 import java.util.Scanner;
 
 public class Ex1_0331_average {

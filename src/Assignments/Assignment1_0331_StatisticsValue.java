@@ -1,3 +1,5 @@
+package Assignments;
+
 public class Assignment1_0331_StatisticsValue {
     public static void main(String[] args) {
         final int MAX_LENGTH = 244;
