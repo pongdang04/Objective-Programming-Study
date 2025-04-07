@@ -3,6 +3,26 @@ package Examples;
 import java.util.Scanner;
 
 public class Ex2_0331_SelectSort {
+    public static void SelectionSort(int[] input){
+        int tmpMin, minIdx, tmpSwitch;
+        for(int i=0;i<input.length;i++){
+            tmpMin = input[i];
+            minIdx = i;
+            for(int j=i;j<input.length;j++){
+                if(input[j]<tmpMin){
+                    tmpMin = input[j];
+                    minIdx = j;
+                }
+            }
+            if(minIdx==i){
+                continue;
+            }else{
+                tmpSwitch = tmpMin;
+                input[minIdx]= input[i];
+                input[i]= tmpSwitch;
+            }
+        }
+    }
     public static void main(String[] args) {
         final int ARRAY_LENGTH = 8;
         Scanner myScanner = new Scanner(System.in);
